@@ -1,11 +1,14 @@
+<?php 
+	include('config.php');
+ ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Projeto 01</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
-	<link rel="stylesheet" type="text/css" href="estilo/all.css">
+	<title>Projeto 01</title>	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo INCLUDE_PATH; ?>estilo/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilo/style.css">
+	<link href="<?php echo INCLUDE_PATH; ?>estilo/style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="palavras-chave, do, site, separadas, por, vírgula">
 	<meta name="description" content="Descrição do site">
@@ -18,10 +21,10 @@
 			<div class="logo left">Logomarca</div><!--logo-->
 			<nav class="desktop right">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav><!--desktop--> 
 			<nav class="mobile right">
@@ -29,10 +32,10 @@
 					<i class="fas fa-bars"></i>
 				</div>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav><!--mobile-->
 			<div class="clear"></div>
@@ -56,7 +59,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet aliquet lectus. Pellentesque diam orci, aliquam vitae sem pellentesque, molestie dignissim ex. Sed tristique non est vitae sagittis. Donec tincidunt dignissim felis, non rutrum turpis congue a. Morbi fringilla ac ipsum in malesuada. Nam diam nulla, posuere eget ex at, luctus lobortis justo.Donec euismod nec enim id consectetur.</p>				
 			</div><!--w50 (50% da tela)-->	
 			<div class="w50 left">
-				<img class="right" src="images/foto2.jpg">
+				<img class="right" src="<?php echo INCLUDE_PATH; ?>images/foto2.jpg">
 			</div><!--w50-->
 			<div class="clear"></div>
 		</div><!--center-->					
@@ -118,7 +121,7 @@
 	<footer>
 		<p>Marcos Camargo 2019 <br> &copy Todos os direitos reservados.</p>		
 	</footer>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="<?php echo INCLUDE_PATH; ?>js/jquery-3.3.1.min.js"></script>
+	<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 </body>
 </html>

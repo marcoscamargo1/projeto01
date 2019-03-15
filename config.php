@@ -1,3 +1,3 @@
 <?php 
-	define('INCLUDE_PATH','http://localhost/Projeto01/');
+	define('INCLUDE_PATH','http://localhost/DANKI_CODE/DESENV.WEB/Projeto01/');
  ?>
